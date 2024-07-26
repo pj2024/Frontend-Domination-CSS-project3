@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Work Sans", sans-serif;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 3vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .gola{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+nav ul li{
+    font-size: .9vw;
+    font-weight: 600;
+}
+
+nav ul li:nth-child(1) span{
+    margin-left: .8vw;
+    color: #969595;
+}
+
+
+.nav2{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    padding: 0 4vw;
+}
+
+.nav2 ul{
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+    height: 100%;
+    align-items: center;
+}
+
+.nav2 ul li{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.hero-sec{
+    width: 100%;
+    height: calc(100% - 150px);
+    /* background-color: red; */
+}
+
+.scroll-text-con{
+    width: 100%;
+    height: 45%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.scroll-text-con::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+
+.scroll-text-con::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #969595; */
+}
+.elem .con{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.con .num{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.con .text-con h5{
+    font-weight: 250;
+    font-size: 1.2vw;
+}
+
+
+.con .text-con h2{
+    font-weight: 300;
+    font-size: 6vw;
+}
+
+
+.scroll-image{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.scroll-image::-webkit-scrollbar{
+    display: none;
+}
+
+.img-con{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-con img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-con:nth-child(2) img{
+    object-position: 40% 20%;
+}
+
+.img-con:nth-child(3) img{
+    object-position: 0% 40%;
+}
+
+
+#menu-icon{
+    display: none;
+}
+
+
+
+@media (max-width:600px) {
+    #menu-icon{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #menu-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    #menu-icon p{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    #menu-icon p span{
+        margin-left: 2vw;
+        color: #969595;
+    }
+
+    #menu-icon i{
+        font-size: 6vw;
+        font-weight: 700;
+    }
+
+    .logo .gola{
+        width: 6vw;
+        height: 6vw;
+    }
+
+    nav{
+        /* background-color: red; */
+        height: 15vw;
+        padding: 3vw 6vw;
+    }
+
+    .nav2{
+        height: 12vw;
+        padding: 0 7vw;
+        /* background-color: red; */
+    }
+    .nav2 ul{
+        gap: 2.3vw;
+    }
+    .nav2 ul li{
+        font-size: 2.6vw;
+    }
+
+    .hero-sec{
+        height: calc(100% - 27vw);
+    }
+
+    .scroll-text-con{
+        /* background-color: red; */
+        height: 30%;
+    }
+
+    .elem{
+        width: 100%;
+    }
+    .con .num{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    
+    .con .text-con h5{
+        font-weight: 250;
+        font-size: 3vw;
+    }
+    
+    
+    .con .text-con h2{
+        font-weight: 300;
+        font-size: 10vw;
+    }
+    
+
+    
+    .scroll-image{
+        height: 70%;
+    }
+
+}
